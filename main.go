@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	netfilter "github.com/AkihiroSuda/go-netfilter-queue"
+	netfilter "github.com/guesslin/go-netfilter-queue"
 )
 
 var (
