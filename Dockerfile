@@ -6,6 +6,6 @@ RUN mkdir -p /apps
 WORKDIR /apps
 COPY . /apps/
 
-RUN go build
+RUN go build -o nfqueue
 
 CMD /apps/nfqueue
