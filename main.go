@@ -14,10 +14,10 @@ var (
 )
 
 func init() {
-	if qid, err := strconv.ParseUint(os.Getenv("QID"), 10, 16); err == nil {
+	if qid, err := strconv.ParseUint(os.Getenv("NFQUEUE_ID"), 10, 16); err == nil {
 		QueueID = uint16(qid)
 	}
-	if qbuf, err := strconv.ParseUint(os.Getenv("QBUF"), 10, 32); err == nil {
+	if qbuf, err := strconv.ParseUint(os.Getenv("NFQUEUE_BUFSIZE"), 10, 32); err == nil {
 		MaxQueueBuf = uint32(qbuf)
 	}
 }
